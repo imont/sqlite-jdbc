@@ -94,7 +94,7 @@ Linux-armv6_SQLITE_FLAGS  :=
 
 Linux-armv7_CC        := $(CROSS_PREFIX)gcc
 Linux-armv7_STRIP     := $(CROSS_PREFIX)strip
-Linux-armv7_CCFLAGS   := -I$(JAVA_HOME)/include -Ilib/inc_linux -O2 -mfloat-abi=hard -mfpu=vfp -fPIC -fvisibility=hidden
+Linux-armv7_CCFLAGS   := -I$(JAVA_HOME)/include -Ilib/inc_linux -O2 -mfloat-abi=softfp -fPIC -g
 Linux-armv7_LINKFLAGS := -shared -static-libgcc
 Linux-armv7_LIBNAME   := libsqlitejdbc.so
 Linux-armv7_SQLITE_FLAGS  :=
